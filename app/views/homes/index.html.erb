@@ -1,0 +1,35 @@
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width:30%">
+  <a href="#" class="w3-bar-item w3-button function" id="fb">Facebook</a>
+  <a href="#" class="w3-bar-item w3-button">Twitter</a> 
+  <a href="#" class="w3-bar-item w3-button">Gmail</a> 
+  <a href="#" class="w3-bar-item w3-button function" id="discord">Discord</a>
+  <a href="#" class="w3-bar-item w3-button">Slack</a>
+  <a href="#" class="w3-bar-item w3-button function" id="reddit">Reddit</a>
+</div>
+
+<div style="margin-left:30%">
+
+	<div class="w3-container">
+	  <h2>Dropdown in Sidebar</h2>
+	</div>
+
+</div>
+<script type="text/javascript">
+	// $(document).ready(function() {
+ //    function fbFunction() {
+	// 		debugger
+		  
+	// 	};
+	// });
+	$('.function').on( "click", function() {
+		debugger
+	  $.ajax({
+	  	type: "POST",
+	  	url: "/homes/social_click",
+	  	data: {id: this.id},
+	  	success: function(result){
+	  		console.log(result)
+	  	}
+		});
+	});
+</script>

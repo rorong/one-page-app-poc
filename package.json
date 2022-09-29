@@ -1,0 +1,7 @@
+{
+  "name": "one-page-app",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.6.1"
+  }
+}
